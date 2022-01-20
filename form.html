@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Light House</title>
+    <style>
+        .content-wrapper{
+            width: 80%;
+            margin: 4% 10% 5% 10%;
+        }
+        .text-wrapper{
+            width: 100%;
+            position: relative;
+            margin-top: -40%;
+        }
+        .text-wrapper h1{
+            text-align: center;
+            color: #ffffff;
+            font-size: 10vw;
+            font-family: 'lobster',cursive;
+        }
+        @media screen and (max-width: 670px){
+          header{
+            min-height: 500px;
+          }
+        }
+        .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+          width: 450px;
+        }
+        h3{
+          width: 100%;
+          font-family: "Poppins", sans-serif;
+          text-align: center;
+        }
+    </style>
+
+    <script src="app\lib\angular.min.js"></script>
+    <script src="app\lib\angular-route.min.js"></script>
+    <script src="app\lib\angular-animate.min.js"></script>
+    <script src="app\angular.js"></script>
+
+</head>
+<body bgcolor="#fff4e3">
+
+<h3>Register Form</h3>
+<section class="section container scrollspy" id="contact">
+    <div class="row"> 
+        <form name="contactForm" novalidate>
+          <div class="input-field">
+            <i class="material-icons prefix">portrait</i>
+            <input type="text" name ="id" id="id" ng-model="form.id" ng-required="true">
+            <label for="id">ID</label>
+            <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+                <small class="red-text">Enter a valid name</small>
+            </div>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="text" name ="email" id="email" ng-model="form.email" ng-required="true">
+            <label for="email">Email</label>
+            <div class="red-text"></div>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <textarea id="name" name="name" class="materialize-textarea" cols="20" rows="20" ng-model="form.name" ng-required="true"></textarea>
+            <label for="message">Name</label>
+            <div class="red-text"></div>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="DOB" name ="DOB" class="datepicker">
+            <label for="DOB">Enter your DOB</label>
+            <div class="red-text"></div>
+          </div>
+          <div class="input-field">
+            <p>Do you want to receive emails about new products and offers?</p>
+            <p>
+              <label>
+                <input type="checkbox" name="notification">
+                <span>Yes!</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn indigo darken-4" name="submit" ng-disabled="contactForm.$invalid">
+              <span>Submit</span>
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+          <div class="input-field center">
+          <a href="web_index.php" class="btn indigo darken-4" name="home">
+            <span>Homepage</span>
+            <i class="material-icons right">home</i>
+          </a>
+          </div>
+        </form>
+    </div>
+</section>
+<!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                //disableWeekends: true,
+                //yearRange: 1
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
