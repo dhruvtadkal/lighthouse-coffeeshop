@@ -87,7 +87,7 @@ $total = $total + ($values["food_quantity"] * $values["food_price"]);
 <div class="but">
 <?php
   echo '<a href="cart.php?action=empty"><button class="btn grey darken-4"> Empty Cart <i class="material-icons right">delete</i></button></a>&nbsp;<a href="Menu.php"><button class="btn grey darken-4">Continue Shopping <i class="material-icons right">restaurant</i></button></a>&nbsp;<a href="cart.php?action=order"><button class="btn grey darken-4 pull-right">Place Order <i class="material-icons right">done</i></button></a>&nbsp';
-  echo '<a href="web_index.php"><button class="btn grey darken-4 pull-right">Homepage <i class="material-icons right">home</i></button></a>';
+  echo '<a href="index.php"><button class="btn grey darken-4 pull-right">Homepage <i class="material-icons right">home</i></button></a>';
 ?>
 </div>
 <br><br><br><br><br><br><br>

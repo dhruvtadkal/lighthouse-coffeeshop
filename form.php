@@ -173,7 +173,7 @@
             </button>
           </div>
           <div class="input-field center">
-          <a href="web_index.php" class="btn indigo darken-4" name="home">
+          <a href="index.php" class="btn indigo darken-4" name="home">
             <span>Homepage</span>
             <i class="material-icons right">home</i>
           </a>

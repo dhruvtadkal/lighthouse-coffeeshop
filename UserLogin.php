@@ -216,4 +216,4 @@ section .color:nth-child(3)
     </section>
 </body>    
 </html>
-<!-- onClick="location.href='web_index.php'" -->
+<!-- onClick="location.href='index.php'" -->

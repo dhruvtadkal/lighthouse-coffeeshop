@@ -158,7 +158,7 @@ body {
             ?>
     
             <div class="container">
-                <a href="web_index.php" class="btn btn-primary">
+                <a href="index.php" class="btn btn-primary">
                     <span>Back</span>
                 </a>
             

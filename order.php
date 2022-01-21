@@ -71,7 +71,7 @@ header("location: UserLogin.php");
         </div>
     </div>
     <div class="container center" style="margin-top:30px; letter-spacing:50px; margin-bottom:20px;">
-        <button class="btn indigo darken-4" onClick="location.href='web_index.php'">
+        <button class="btn indigo darken-4" onClick="location.href='index.php'">
             <span>Homepage<i class="material-icons right">home</i></span>
         </button>
         <button class="btn indigo darken-4" id="view">
